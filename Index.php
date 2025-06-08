@@ -20,12 +20,5 @@
     <button type="submit">Enviar</button>
   </form>
 
-<div id="overlay"></div>
-<div id="popup">
-  <p id="mensagemPopup"></p>
-  <button id="btnFechar">X Fechar</button>
-</div>
-
-
 </body>
 </html>
