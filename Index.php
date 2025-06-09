@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="Public/CSS/index.css">
   <script defer src="Public/JS/index.js"></script> 
-  <title>Formulário com Popup</title>
+  <link rel="shortcut icon" href="Public/Image/Logo-.png" type="image/x-icon">
+  <title>SMTP Unico</title>
 </head>
 <body>
-
-  <h2>Formulário</h2>
   <form id="meu-formulario">
+    <h2>Formulário de SMTP</h2>
+    <Br>
     <label>Nome:
       <input type="text" name="nome" id="inputNome">
     </label>
@@ -17,7 +18,12 @@
     <label>Email:
       <input type="email" name="email" id="inputEmail">
     </label>
-    <button type="submit">Enviar</button>
+
+    <label>Mensagem:
+      <input name="mensagem" id="inputMensagem" rows="5" cols="30">
+    </label>  
+
+      <button type="submit">Enviar</button>
   </form>
 
 </body>

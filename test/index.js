@@ -8,11 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnFechar     = document.getElementById('btnFechar');
   const form          = document.getElementById('meu-formulario');
 
-  // ————— Estado interno —————
   let nomeJaVisto  = false;
   let emailJaVisto = false;
 
-  // ————— Funções de popup —————
   function abrirPopup(mensagem) {
     mensagemPopup.innerText = mensagem;
     popup.style.display      = 'block';
@@ -24,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
     overlay.style.display = 'none';
   }
 
-  // ————— Listeners —————
   inputNome.addEventListener('click', () => {
     if (!nomeJaVisto) {
       abrirPopup('Digite seu nome completo');

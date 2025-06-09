@@ -1,13 +1,69 @@
-bady {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 40;
+/* Imagem de Fundo */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  background-image: url('../Image/fundo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+/* Formulario */
 form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: auto;
+  width: 320px;  
+  max-width: 90%;          
+  margin: 50px auto;       
+  padding: 20px;
+  box-sizing: border-box;  
+  background: rgba(0,100,200,0.85);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column; 
+  gap: 15px;               
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;    
+}
+
+form label {
+  color: white;
+  display: block;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;            
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+form textarea {
+  height: 120px;
+  resize: vertical;        
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0a1b2e;
 }
 
 label {
@@ -17,36 +73,11 @@ label {
 
 input{
     width: 100%;
-    padding: 8px;
-    margin-top: 5px;
+    padding: 10px;
+    margin-top: 20px;
 }
 
-#popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: white;
-    border: 1px solid #ccc;
-    padding: 20px;  
-    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
-}
-#overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-}
 
-#popup h2 {
-    margin-top: 15px;
-}
 
 button {
     background-color: #007bff;
