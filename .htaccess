@@ -1,0 +1,5 @@
+# Bloquear acesso ao arquivo .env
+<Files .env>
+    Order Deny,Allow
+    Deny from all
+</Files>

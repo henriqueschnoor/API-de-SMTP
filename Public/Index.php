@@ -2,9 +2,9 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="Public/CSS/index.css">
-  <script defer src="Public/JS/index.js"></script> 
-  <link rel="shortcut icon" href="Public/Image/Logo-.png" type="image/x-icon">
+  <link rel="stylesheet" href="CSS/index.css">
+  <script defer src="JS/index.js"></script> 
+  <link rel="shortcut icon" href="Image/Logo-.png" type="image/x-icon">
   <title>SMTP Unico</title>
 </head>
 <body>

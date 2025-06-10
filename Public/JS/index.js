@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     try {
-      const response = await fetch('http://localhost/E-MAIL%20ENVIO/API/smtp/API_SMTP.php', {
+      const response = await fetch('http://localhost/API-de-SMTP/API/API_SMTP.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json'},
         body: JSON.stringify(payload)
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const resultado = await response.json();
 
       if (response.ok) {
-        alert(resultado.mensagem || 'Dados salvos com sucesso!');
+        alert(resultado.mensagem || 'Enviado o email com Sucesso!');
        console.group('Dados do formulário');
         console.log('Nome:', resultado.data.nome);
         console.log('Email:', resultado.data.email);
